@@ -1,0 +1,42 @@
+element.style {
+    max-height: 400px;
+    display: block;
+}
+.menuzord-menu.menuzord-right {
+    float: right;
+}
+.menuzord-menu {
+    margin: 0;
+    padding: 0;
+    float: left;
+    list-style: none;
+}
+.menuzord, .menuzord * {
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+* {
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+foglio di stile dello user agent
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+}
+body {
+    background: #333;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
