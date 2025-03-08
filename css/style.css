@@ -2744,7 +2744,7 @@ Sticky Header
   font-size: 16px;
   color: #ffffff;
   font-weight: 400;
-  text-transform: capitalize;
+  text-transform:none;
 }
 .mobile-menu .navigation li:hover > a, .mobile-menu .navigation li.current > a {
   color: var(--theme-color2);
