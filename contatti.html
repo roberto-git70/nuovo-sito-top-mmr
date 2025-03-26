@@ -34,6 +34,8 @@
     <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
     <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
 
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 </head>
 
 <body>
@@ -298,7 +300,7 @@
                     </div>
                     <div class="col-xl-7 col-lg-6">
                         <!-- Google Map HTML Codes -->
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2873.28996338456!2d10.91251717656624!3d43.93267233431003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132a8bbfd03eeef1%3A0x9225cb63bf936613!2sVia%20Bruno%20Buozzi%2C%2051100%20Pistoia%20PT!5e0!3m2!1sit!2sit!4v1742276749992!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2873.28996338456!2d10.91251717656624!3d43.93267233431003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132a8bbfd03eeef1%3A0x9225cb63bf936613!2sVia%20Bruno%20Buozzi%2C%2051100%20Pistoia%20PT!5e0!3m2!1sit!2sit!4v1742276749992!5m2!1sit!2sit" width="600" height="450" style="border-radius: 15px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
@@ -314,6 +316,7 @@
                 </div>
             <div class="row justify-content-center">
                 <div class="col-lg-8">
+
 <!-- Contact Form -->
     <form id="contact_form" name="contact_form" class="" action="includes/sendmail.php"method="post">
     <div class="row">
@@ -343,6 +346,8 @@
     <div class="mb-3 form-group">
         <textarea name="form_message" class="form-control required" rows="7"placeholder="Messaggio"></textarea>
 </div>
+
+<div class="g-recaptcha" data-sitekey="6LfF4zYeAAAAAFIENRpyuSsUn2iRZuDP7sTv8u24" style="margin-bottom: 15px;"></div>
     <div class="mb-3 text-center">
         <input name="form_botcheck" class="form-control" type="hidden" value="" />
             <button type="submit" class="theme-btn btn-style-one"data-loading-text="Attendi..."><span class="btn-title">Invia</span></button>
@@ -350,11 +355,15 @@
     </div>
 </form>
 
+
 <!-- Contact Form Validation-->
             </div>
         </div>
     </div>
+    
 </section>
+
+
         <!--Contact Details End-->
 
 
@@ -483,20 +492,24 @@
     <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
 
 
-    <script src="js/jquery.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.fancybox.js"></script>
-    <script src="js/jquery-ui.js"></script>
-    <script src="js/jquery.countdown.js"></script>
-    <script src="js/bxslider.js"></script>
-    <script src="js/mixitup.js"></script>
-    <script src="js/wow.js"></script>
-    <script src="js/appear.js"></script>
-    <script src="js/select2.min.js"></script>
-    <script src="js/swiper.min.js"></script>
-    <script src="js/owl.js"></script>
-    <script src="js/script.js"></script>
+    <!-- Carica jQuery solo una volta -->
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/jquery.form.min.js"></script>
+<!-- <script src="js/popper.min.js"></script> -->
+<!-- <script src="js/bootstrap.min.js"></script> -->
+<!-- <script src="js/jquery.fancybox.js"></script> -->
+<script src="js/jquery-ui.js"></script>
+<script src="js/jquery.countdown.js"></script>
+<script src="js/bxslider.js"></script>
+<script src="js/mixitup.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/appear.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/owl.js"></script>
+<script src="js/script.js"></script>
+
 
     <!-- form submit -->
     <script src="js/jquery.validate.min.js"></script>
