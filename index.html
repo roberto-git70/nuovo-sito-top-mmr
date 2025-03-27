@@ -743,15 +743,37 @@ Mon - Sat 8:00 - 6:30, Sunday - CLOSED -->
 								<div class=" form-group"><textarea name="form_message" class="form-control required"
 										rows="7" placeholder="Messaggio"></textarea>
 								</div>
-								<div class="g-recaptcha" data-sitekey="6LfF4zYeAAAAAFIENRpyuSsUn2iRZuDP7sTv8u24"
-									style="margin-bottom: 15px;"></div>
-								<div class="">
+								<div class="g-recaptcha" data-sitekey="6LfF4zYeAAAAAFIENRpyuSsUn2iRZuDP7sTv8u24"style="margin-bottom: 15px;"></div>
+								<!-- <div class="">
 									<input name="form_botcheck" class="form-control" type="hidden" value="" />
-									<button type="submit" class="theme-btn btn-style-one"
-										data-loading-text="Attendi..."><span class="btn-title">Invia</span></button>
-									<button type="reset" class="theme-btn btn-style-one"><span
-											class="btn-title">Cancella</span></button>
+									<button type="submit" class="theme-btn btn-style-one"data-loading-text="Attendi..."><span class="btn-title">Invia</span></button>
+									<button type="reset" class="theme-btn btn-style-one"><span class="btn-title">Cancella</span></button>
+								</div> -->
+							
+								<div class="mb-3 text-center pulsanti-responsive">
+									<input name="form_botcheck" class="form-control" type="hidden" value="" />
+									<button type="submit" class="theme-btn btn-style-one btn-invia"><span class="btn-title">Invia</span></button>
+									<button type="reset" class="theme-btn btn-style-one btn-cancella"><span class="btn-title">Cancella</span></button>
 								</div>
+								
+								<style>
+								.pulsanti-responsive button {
+									margin: 5px; /* Aggiunge un margine per separare i pulsanti */
+									padding: 10px 20px; /* Regola il padding per le dimensioni iniziali */
+								}
+								
+								/* Media query per schermi più piccoli (es. dispositivi mobili) */
+								@media (max-width: 768px) {
+									.pulsanti-responsive button {
+										display: block; /* Imposta i pulsanti uno sotto l'altro */
+										width: 40%; /* Riduce la larghezza dei pulsanti */
+										margin: 10px auto; /* Centra i pulsanti e aggiunge spazio verticale */
+										font-size: 0.9em; /* Riduce la dimensione del testo */
+										padding: 8px 16px; /* Riduce il padding */
+									}
+								}
+								</style>
+							
 							</form>
 						</div>
 
