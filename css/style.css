@@ -4723,6 +4723,132 @@ Section Title
   margin-bottom: 15px;
 }
 
+/* FASI BLOCK */
+
+.fasi-section {
+  position: relative;
+  padding: 120px 0 80px;
+}
+.fasi-section .auto-container {
+  max-width: 1050px;
+}
+
+.fasi-block {
+  position: relative;
+  margin-bottom: 40px;
+}
+.fasi-block:last-child .image-box:before {
+  display: none;
+}
+.fasi-block .inner-box {
+  position: relative;
+}
+.fasi-block .inner-box:hover .info-box {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1);
+}
+.fasi-block .inner-box:hover .icon {
+  background-color: #ffffff;
+  color: var(--theme-color2);
+}
+.fasi-block .inner-box:hover .icon:after {
+  height: 136px;
+  width: 136px;
+}
+.fasi-block .icon-box {
+  position: relative;
+  padding-top: 60px;
+}
+.fasi-block .icon-box::before {
+  position: absolute;
+  left: 60px;
+  top: 0;
+  width: 190px;
+  height: 146px;
+  background-image: url(../images/icons/process-arrow.png);
+  content: "";
+}
+.fasi-block .icon-box .icon {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 136px;
+  width: 136px;
+  border-radius: 50%;
+  margin-bottom: 50px;
+  color: #ffffff;
+  font-size: 72px;
+  background-color: var(--bg-theme-color2);
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+.fasi-block .icon-box .icon:after {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 160px;
+  width: 160px;
+  display: block;
+  background-color: #ffffff;
+  border-radius: 50%;
+  z-index: -1;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+  -webkit-box-shadow: 0 10px 60px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 10px 60px rgba(0, 0, 0, 0.1);
+  content: "";
+}
+.fasi-block .icon-box .count {
+  position: absolute;
+  left: 140px;
+  top: 40px;
+  font-size: 120px;
+  color: var(--theme-color3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 900;
+  z-index: 2;
+  opacity: 0.5;
+  -webkit-transition: all 300ms linear;
+  transition: all 300ms linear;
+}
+
+.fasi-block .title {
+  z-index: 2;
+  font-weight: 800;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.fasi-block .inner-box {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.fasi-block .icon-box {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* FASI BLOCK END*/
 /*** 
 
 ====================================================================
@@ -4795,6 +4921,8 @@ Section Title
   border-radius: 0 0 500px 0;
   content: "";
 }
+
+
 .testimonial-block .image-box {
   position: relative;
   display: -webkit-box;
