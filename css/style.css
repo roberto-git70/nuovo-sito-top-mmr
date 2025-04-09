@@ -4909,7 +4909,7 @@ Section Title
 }
 .fasi-discription .tab-btn-box .tab-btns li.active-btn {
   color: var(--text-color-bg-theme-color1);
-  background-color: var(--theme-color1);
+  background-color: var(--theme-color2);
 }
 .fasi-discription .tab-btn-box .tab-btns li:last-child {
   margin-bottom: 0;
@@ -4944,6 +4944,13 @@ Section Title
     margin-left: 0;
     margin-top: 20px;
   }
+}
+
+.tab {
+  display: none;
+}
+.active-tab {
+  display: block;
 }
 
 
