@@ -4851,10 +4851,107 @@ Section Title
 /* FASI BLOCK END*/
 /*** 
 
-====================================================================
+
+/* ====================================================================
+    FASI IN DETTAGLIO
+==================================================================== */
+
+.fasi-discription .fasi-description__list ul li p {
+  margin: 0;
+  font-weight: 600;
+  color: var(--headings-color);
+}
+.fasi-discription .fasi-description__list ul li p span:before {
+  position: relative;
+  display: inline-block;
+  color: var(--theme-color1);
+  font-size: 17px;
+  line-height: 17px;
+  margin-right: 11px;
+  top: 2px;
+}
+.fasi-discription .tabs-content .text p {
+  margin-bottom: 17px;
+}
+.fasi-discription .tabs-content .text p:last-child {
+  margin-bottom: 0px;
+}
+.fasi-discription .tab-btn-box {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-bottom: 60px;
+}
+.fasi-discription .tab-btn-box:before {
+  position: absolute;
+  content: "";
+  background-color: #e1e8e4;
+  width: 100%;
+  height: 1px;
+  left: 0px;
+  top: 28px;
+}
+.fasi-discription .tab-btn-box .tab-btns li {
+  position: relative;
+  display: inline-block;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #1e2434;
+  text-align: center;
+  padding: 14px 30px;
+  background-color: #fff;
+  border: 1px solid #e1e8e4;
+  cursor: pointer;
+  margin: 0px 8.5px;
+  margin-bottom: 15px;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+.fasi-discription .tab-btn-box .tab-btns li.active-btn {
+  color: var(--text-color-bg-theme-color1);
+  background-color: var(--theme-color1);
+}
+.fasi-discription .tab-btn-box .tab-btns li:last-child {
+  margin-bottom: 0;
+}
+
+.related-product h3 {
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+  .fasi-details__img {
+    margin-bottom: 50px;
+  }
+  .fasi-details__title span {
+    margin-left: 0;
+    display: block;
+  }
+  .fasi-details__buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  .fasi-details__buttons-2 {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .fasi-details__social-link {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+
+
+
+/* ====================================================================
 	Testimonial Section
 ====================================================================
-
+ */
 ***/
 .testimonial-section {
   position: relative;
