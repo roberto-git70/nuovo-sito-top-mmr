@@ -11373,6 +11373,10 @@ Page Title
   display: block;
 }
 
+.blog-details .container{
+  padding-top: 3em;
+}
+
 .blog-details__left {
   position: relative;
   display: block;
