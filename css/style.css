@@ -2457,89 +2457,11 @@ Header Style One
     Header Style Two
 ====================================================================
 
-***/
-.header-style-two {
-  position: relative;
-  background-color: #fff;
-  z-index: 9;
-}
-.header-style-two .header-top {
-  position: relative;
-}
-.header-style-two .header-top .inner-container {
-  padding: 0 80px;
-}
-.header-style-two .container-fluid {
-  padding: 0 80px;
-}
-.header-style-two .header-lower .logo-box {
-  padding: 38px 0;
-  margin-right: 30px;
-}
-.header-style-two .main-box {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.header-style-two .main-box .nav-outer {
-  width: auto;
-}
-.header-style-two .main-menu .navigation > li {
-  margin-right: 60px;
-}
-.header-style-two .info-btn,
-.header-style-two .ui-btn {
-  color: var(--theme-color1);
-}
-.header-style-two .info-btn small {
-  color: #6a6a6a;
-}
-.header-style-two .main-menu .navigation > li > a {
-  color: #6a6a6a;
-}
-
-/*** 
 
 ====================================================================
     Header Style Three
 ====================================================================
 
-***/
-.header-style-three {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  background-color: transparent;
-  z-index: 9;
-}
-.header-style-three .container-fluid {
-  padding: 0 80px;
-}
-.header-style-three .logo-box {
-  padding: 38px 0;
-  margin-right: 30px;
-}
-.header-style-three .main-box {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.header-style-three .main-box .nav-outer {
-  width: auto;
-}
-.header-style-three .main-menu .navigation > li {
-  margin-right: 60px;
-}
-.header-style-three .info-btn,
-.header-style-three .ui-btn {
-  color: var(--theme-color1);
-}
-.header-style-three .main-menu .navigation > li > a {
-  color: #6a6a6a;
-}
-
-/*** 
 
 ====================================================================
 Sticky Header
@@ -6725,16 +6647,20 @@ Section Title
 /*** 
 
 ====================================================================
-    Why Choose Us Two
+    VANTAGGI
 ====================================================================
 
 ***/
-.vantaggi-azie {
+.vantaggi-azie { 
   position: relative;
   padding: 120px 0 70px;
-background-image: url(../images/background/3.webp);
-background-repeat: no-repeat;
+  background-color: #000; /* <-- colore di fallback, nero */
+  background-image: url(../images/background/3.webp);
+  background-repeat: no-repeat;
+  background-size: cover; /* <-- importantissimo per coprire tutta la sezione */
+  background-position: center center;
 }
+
 
 .vantaggi-azie::before {
   position: absolute;
@@ -6789,7 +6715,7 @@ background-repeat: no-repeat;
   left: -10px;
   height: 100%;
   width: 150px;
-  background-color: var(--bg-theme-color2);
+  background-color: var(--bg-theme-color);
   content: "";
   z-index: -1;
   border-radius: 10px;
@@ -6819,6 +6745,14 @@ background-repeat: no-repeat;
   position: absolute;
   left: 204px;
   top: 185px;
+}
+
+@media (max-width: 767px) {
+  .vantaggi-azie .content-column .inner-column {
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+  }
 }
 
 .feature-block-six {
@@ -6874,137 +6808,16 @@ background-repeat: no-repeat;
   color: #6a6a6a;
 }
 
-/***
+/* ====================================================================
+    VANTAGGI FINE
+==================================================================== */
 
-==================================================================
+
+/* ==================================================================
     Offer Section
-==================================================================
+================================================================== */
 
-***/
-.offer-section {
-  position: relative;
-  background-color: #181818;
-}
-.offer-section:before {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  content: "";
-}
-.offer-section .bg {
-  max-width: 55%;
-}
-
-.offer-section .content-column {
-  position: relative;
-}
-.offer-section .content-column .inner-column {
-  position: relative;
-  padding: 130px 0 60px;
-}
-.offer-section .content-column .sec-title {
-  margin-bottom: 80px;
-}
-.offer-section .content-column .sec-title .text {
-  margin-top: 45px;
-}
-.offer-section .content-column .info-box {
-  position: relative;
-  margin-bottom: 70px;
-}
-.offer-section .content-column .info-box:hover .icon {
-  color: #fff;
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
-}
-.offer-section .content-column .info-box .icon {
-  font-size: 64px;
-  color: var(--theme-color2);
-  line-height: 1em;
-  -webkit-transition: all 300ms ease;
-  transition: all 300ms ease;
-  display: inline-block;
-  margin-bottom: 20px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-.offer-section .content-column .info-box .title {
-  line-height: 30px;
-  margin-bottom: 0;
-  color: #fff;
-}
-
-.offer-section .image-column {
-  position: relative;
-}
-.offer-section .image-column .inner-column {
-  position: relative;
-  padding-left: 70px;
-}
-.offer-section .image-column .image-box {
-  position: relative;
-  margin-right: -375px;
-}
-.offer-section .image-column .image-box .image {
-  position: relative;
-  margin-bottom: 0;
-  width: 100%;
-}
-.offer-section .image-column .image-box .image img {
-  width: 100%;
-  min-height: 570px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.offer-section .image-column .caption-box {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  top: 0;
-  width: 100%;
-  max-width: 330px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 130px 50px 130px;
-}
-.offer-section .image-column .caption-box::before {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background-color: var(--bg-theme-color2);
-  opacity: 0.9;
-  content: "";
-}
-.offer-section .image-column .caption-box .title {
-  color: #fff;
-  font-weight: 700;
-  margin-bottom: 0;
-}
-.offer-section .image-column .caption-box .link {
-  position: relative;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 700;
-  -webkit-transition: all 300ms ease;
-  transition: all 300ms ease;
-}
-.offer-section .image-column .caption-box .link:hover {
-  color: var(--theme-color1);
-}
+/*  */
 
 /*** 
 
@@ -10735,6 +10548,85 @@ Page Title
   margin: 0 auto;
 }
 
+
+/* ================================== */
+/* PERCHE'LAVORARE CON NOI */
+/* ================================== */
+
+.features-section-three .title-column .inner-column {
+  padding-right: 30px; /* Maggiore spazio a destra della colonna di testo */
+}
+
+.features-section-three .sec-title .text p {
+  margin-bottom: 15px;
+}
+
+.features-section-three .sec-title .text p:last-child {
+  margin-bottom: 25px;
+}
+
+.features-container {
+  padding-left: 20px; /* Aggiunge spazio tra le colonne */
+}
+
+.feature-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+.list-style-my {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.feature-item {
+  width: 100%;
+  padding: 14px 20px; /* Padding leggermente aumentato per bilanciare la mancanza dell'icona */
+  margin: 8px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1); /* Sfondo semi-trasparente */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Bordo leggero */
+  border-radius: 8px; /* Angoli arrotondati */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombra leggera */
+  transition: all 0.3s ease; /* Transizione fluida per effetti hover */
+  font-weight: 500; /* Testo leggermente più in evidenza */
+}
+
+.feature-item:hover {
+  background-color: rgba(255, 255, 255, 0.15); /* Leggermente più chiaro al passaggio del mouse */
+  transform: translateY(-2px); /* Leggero effetto di sollevamento */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Ombra più pronunciata */
+}
+
+/* Responsive: su tablet e desktop diventa un layout a due colonne */
+@media (min-width: 576px) {
+  .feature-item {
+      width: calc(50% - 16px); /* Considera i margini */
+  }
+}
+
+/* Su mobile torna a una colonna */
+@media (max-width: 575px) {
+  .feature-item {
+      width: calc(100% - 16px); /* Considera i margini */
+  }
+  
+  .features-container {
+      padding-left: 0; /* Rimuove il padding laterale su mobile */
+  }
+}
+
+/* ====================================== */
+/* PERCHE'LAVORARE CON NOI FINE */
+/* ====================================== */
+
+
 /***
 =============================================
     Services Details
@@ -12968,3 +12860,4 @@ Sidebar
 .footer-bottom .copyright-text a:hover {
   color: #ffffff;
 }
+
